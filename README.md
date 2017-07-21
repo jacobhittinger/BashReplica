@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------------------
 
-# Bash Replica
+## Bash Replica
 
 Eastern Washington University, CSCD 340 - Operating Systems, April 2016
 
@@ -10,7 +10,7 @@ Built for Linux, and written in C, this is a replica of the well known Unix shel
 
 ---------------------------------------------------------------------------------------------------------------
 
-Functionality includes:
+**Functionalities included:**
 + cd
 + background execution
 + pipes
@@ -20,8 +20,10 @@ Functionality includes:
 
 ---------------------------------------------------------------------------------------------------------------
 
-See '/BashReplica/myshrc/README.txt' for information on the following configuation files:
+**Configuation files:**
 + .myshrc
 + .mysh_history
+
+See '/BashReplica/myshrc/README.txt' for information on these.
 
 ---------------------------------------------------------------------------------------------------------------
