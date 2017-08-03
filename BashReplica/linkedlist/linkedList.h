@@ -130,6 +130,14 @@ void clearList(LinkedList * theList, void (*removeData)(void *));
  */
 void printList(const LinkedList * theList, void (*convertData)(void *));
 
+/**
+ * @brief Removes the first node in the linked list
+ *
+ * @param theList - The specified linked list
+ * @param *removeData - The function pointer for removing the specific data type
+ *
+ * @warning - The passed in LinkedList * theList is checked - returns if NULL or size == 0
+ */
 void removeFirst(LinkedList * theList, void (*removeData)(void *));
 
 #endif // LINKEDLIST_H
