@@ -8,10 +8,10 @@ mysh:	main.c ./tokenize/makeArgs.o ./utils/myUtils.o ./process/process.o ./pipes
 makeArgs.o:	./tokenize/makeArgs.c ./tokenize/makeArgs.h
 	gcc -g -c ./tokenize/makeArgs.c
 
-linkedList.o:	./linkedlist/linkedList.h ./linkedlist/linkedList.c ./linkedlist/genericData.h ./linkedlist/requiredIncludes.h
-	gcc -c -g ./linkedlist/linkedList.c
+linkedList.o:	./linkedlist/linkedList.c ./linkedlist/linkedList.h ./linkedlist/genericData.h ./linkedlist/requiredIncludes.h
+	gcc -g -c ./linkedlist/linkedList.c
 
-myUtils.o:	./utils/myUtils.o ./utils/myUtils.h
+myUtils.o:	./utils/myUtils.c ./utils/myUtils.h
 	gcc -g -c ./utils/myUtils.c
 
 process.o:	./process/process.c ./process/process.h
@@ -23,20 +23,20 @@ pipes.o:	./pipes/pipes.c ./pipes/pipes.h
 startCheck.o: ./myshrc/startCheck.c ./myshrc/startCheck.h
 	gcc -g -c ./myshrc/startCheck.c
 
-history.o:	./history/history.h ./history/history.c
+history.o:	./history/history.c ./history/history.h
 	gcc -g -c ./history/history.c
 
 listUtils.o:	./linkedlist/listUtils.c ./linkedlist/listUtils.h
-	gcc -c -g ./linkedlist/listUtils.c
+	gcc -g -c ./linkedlist/listUtils.c
 
 cd.o:	./cd/cd.c ./cd/cd.h
-	gcc -c -g ./cd/cd.c
+	gcc -g -c ./cd/cd.c
 
 path.o: ./path/path.c ./path/path.h
-	gcc -c -g ./path/path.c
+	gcc -g -c ./path/path.c
 
 pipeArg.o: ./pipes/pipeArg.c ./pipes/pipeArg.h
-	gcc -c -g ./pipes/pipeArg.c
+	gcc -g -c ./pipes/pipeArg.c
 
 clean:
 	rm ./pipes/pipes.o	
